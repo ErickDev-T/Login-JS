@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <!-- Formulario de Registro -->
+            <form id="register-form" class="form">
+                <h2>Registro</h2>
+                <input type="text" id="nombre" placeholder="Nombre">
+                <span id="nombre-error" class="error"></span>
+                
+                <input type="text" id="apellido" placeholder="Apellido">
+                <span id="apellido-error" class="error"></span>
+                
+                <input type="email" id="correo-reg" placeholder="Correo">
+                <span id="correo-reg-error" class="error"></span>
+                
+                <input type="password" id="contraseña-reg" placeholder="Contraseña">
+                <span id="contraseña-reg-error" class="error"></span>
+                
+                <button type="button" id="registrar">Registrar</button>
+                <p class="cuenta">¿Ya tienes cuenta? <a href="#" id="to-login">Inicia sesión</a></p>
+            </form>
+
+            <!-- Formulario de Login -->
+            <form id="login-form" class="form hidden">
+                <h2>Iniciar Sesión</h2>
+                <input type="email" id="correo-login" placeholder="Correo">
+                <span id="correo-login-error" class="error"></span>
+                
+                <input type="password" id="contraseña-login" placeholder="Contraseña">
+                <span id="contraseña-login-error" class="error"></span>
+                
+                <button type="button" id="iniciar-sesion">Iniciar Sesión</button>
+                <p class="cuenta">¿No tienes cuenta? <a href="#" id="to-register">Regístrate</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
